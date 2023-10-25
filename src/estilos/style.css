@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  font-family: "Exo 2", sans-serif;
+  background-image: linear-gradient(to right, #000045, #000000);
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2em;
+  padding: 16px 40px;
+  margin-right: auto;
+}
+
+header > nav ul { padding: 16px 40px; }
+
+header > nav > ul li {
+  float: right;
+  list-style-type: none;
+  padding: 10px;
+}
+
+li a, h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MAIN */
+main { font-family: "Heebo", sans-serif; }
+
+/* PRESENTATION PAGE */
+#paginainicial, #sobremim, #habilidades, #projetos, #contato {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #000045, #000000);
+}
+
+#cardpresentation, #cardaboutme, #cardskills, #cardprojects {
+  margin-right: auto;
+  padding-left: 125px;
+}
+
+#paginainicial img {
+  max-width: 400px;
+  padding-right: 125px; 
+}
+
+#cardpresentation p, #cardaboutme p, #cardprojects p, #cardcontact p { font-size: 1.5em; }
+#cardpresentation h1, #cardaboutme h1, #cardprojects h1, #cardcontact h1 { font-size: 3em; }
+
+/* ABOUT ME PAGE */
+section#sobremim { background-image: linear-gradient(to right top, #000045, #000000); }
+
+#cardaboutme p { 
+  font-size: 1.3em;
+  width: 85vw;
+}
+
+/* Skills Page */
+#cardskills ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#cardskills > ul li {
+  padding: 15px;
+}
+
+#cardskills > ul > li img {
+  width: 150px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.160);
+  border: 1px solid rgba(255, 255, 255, 0.160);
+  border-radius: 15px;
+}
+
+#cardskills > ul > li img:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Projects Page */
+section#projetos { background-image: linear-gradient(to right top, #000045, #000000); }
